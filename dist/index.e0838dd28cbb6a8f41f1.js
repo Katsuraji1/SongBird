@@ -1,0 +1,1 @@
+!function(){"use strict";document.getElementsByClassName("to-main-page")[0].addEventListener("click",(()=>{window.location.href="index.html"})),document.getElementsByClassName("to-quiz-page")[0].addEventListener("click",(()=>{window.location.href="quiz.html"})),document.getElementsByClassName("start-btn")[0].addEventListener("click",(()=>{window.location.href="quiz.html"}))}();

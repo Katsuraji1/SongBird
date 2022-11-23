@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0 auto ;
+}
+
+body{
+    margin: auto;
+    max-width: 1600px;
+    width: 100%;
+    .main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+    background-size: 100% 100%;
+    
+
+    header{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .header-logo{
+            margin: 10px;
+            width: 200px;
+            height: 55px;
+            background-image: url('svg/logo.4f82cd73.svg');
+            background-size: 100% 100%;
+        }
+        .score-block{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: auto;
+            gap:5%;
+            justify-content: space-between;
+            margin-right: 1%;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+    }
+
+    main{
+        background-color: rgb(53, 52, 52);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .main__nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            height: 40px;
+            border-radius: 5px;
+
+            .nav-ul{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 20px;
+
+            li{
+                background-color: green;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .currentLevel{
+                background-color: rgb(3, 77, 3);
+            }
+            }
+        }
+
+        .bird-preview{
+            width: 80%;
+            height: 30%;
+            border-radius: 10px;
+            background-color: rgb(31, 30, 30);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .bird-preview__pic{
+                width: 20%;
+                height: 80%;
+                border-radius: 10px;
+                background-size: 100% 100%;
+            }
+
+            .right-side{
+                width: 70%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                hr{
+                    width: 95%;
+                }
+                .bird-preview__name{
+                    width: 95%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    height: 30%;
+                    color: white;
+                    font-size: 30px;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+
+                .bird-preview__audio-player{
+                    display: flex;
+                    flex-direction: column;
+                    width: 95%;
+                    height: 65%;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    .progress-and-time{
+                        width: 100%;
+                        height: 35%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        .time-progress{
+                            width: 90%;
+                            height: 20%;
+                            background-color: white;
+                        }
+                        .start-pause-btn{
+                            background-size: 100% 100%;
+                            background-image: url('svg/play.svg');
+                            width: 5%;
+                            height: 100%;
+                        }
+                    }
+
+                    .bottom-part-player{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        height: 50%;
+                        justify-content: space-between;
+                        .time-control{
+                        margin: 0;
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                    .volume{
+                        margin: 0;
+                        width: 30%;
+                        height: 60%;
+                        flex-direction: row;
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .volume-slide{
+                            width: 70%;
+                            height: 30%;
+                            background-color: white;
+                        }
+                        .mute-btn{
+                            background-size: 100% 100%;
+                            width:15%;
+                            height: 100%;
+                            background-image: url('svg/volume-mute.svg');
+                        }
+                    }  
+                    }
+
+                }
+            }
+        }
+
+        .answers-and-info{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            height: 60%;
+
+            .quiz-answers{
+                width: 45%;
+                height: 100%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .answers-ul{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    li{
+                        width: 100%;
+                        height: 100%;
+                        flex-direction:  row;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: gray;
+                        border: 1px solid rgb(85, 84, 84);
+                        font-size: 25px;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+
+                        .circle{
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            background-color: white;
+                            margin: 0px;
+                        }
+
+
+                        .green{
+                            background-color: green;
+                        }
+
+                        .red{
+                            background-color: red;
+                        }
+                    }
+                }
+            }
+
+            .bird-info-block{
+                background-color: gray;
+                box-sizing: border-box;
+                padding: 1%;
+                width: 45%;
+                height: 100%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .bird-top-side{
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .bird-pic{
+                        width: 40%;
+                        height: 65%;
+                        border-radius: 10px;
+                        margin: 0px;
+                        background-size: 100% 100%;
+                    }
+
+                    .player-block{
+                        margin: 0px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        width: 55%;
+                        height: 65%;
+                    }
+                    hr{
+                        width: 100%;
+                    }
+                    .bird-name{
+                        width: 100%;
+                        height: 20%;
+                        font-size: 30px;
+                        font-family: 'Times New Roman', Times, serif;
+                        color: white;
+                    }
+
+                    .bird-name-translate{
+                        width: 100%;
+                        height: 20%;
+                        font-size: 30px;
+                        font-family: 'Times New Roman', Times, serif;
+                        color: white;
+                    }
+
+                    .bird-song{
+                        width: 100%;
+                        height: 60%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        .second-progress-and-time{
+                            width: 100%;
+                            height: 35%;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            .second-time-progress{
+                                width: 80%;
+                                height: 20%;
+                                background-color: white;
+                            }
+                            .second-start-pause-btn{
+                                background-size: 100% 100%;
+                                background-image: url('svg/play.svg');
+                                width: 10%;
+                                height: 90%;
+                            }
+                    }
+                    .second-bottom-part-player{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        height: 50%;
+                        justify-content: space-between;
+
+                    .second-volume{
+                        margin: 0;
+                        width: 50%;
+                        height: 60%;
+                        flex-direction: row;
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .second-volume-slide{
+                            width: 70%;
+                            height: 30%;
+                            background-color: white;
+                        }
+                        .second-mute-btn{
+                            background-size: 100% 100%;
+                            width:15%;
+                            height: 100%;
+                            background-image: url('svg/volume-mute.svg');
+                        }
+                    }  
+                    }
+                    }
+                }
+
+                .bird-info{
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 20px;
+                    width: 100%;
+                    height: 40%;
+                    word-wrap: break-word;
+                }
+            }
+        }
+
+        .next-level-btn{
+            width: 75%;
+            height: 5%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            background-color: rgb(5, 85, 19);
+        }
+    }
+}
+}
+

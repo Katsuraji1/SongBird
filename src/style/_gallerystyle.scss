@@ -1,0 +1,230 @@
+body{
+    margin: auto;
+    max-width: 1600px;
+    width: 100%;
+    .main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    background-size: 100% 100%;
+    header{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        .header-logo{
+            margin: 10px;
+            width: 200px;
+            height: 55px;
+            background-image: url('svg/logo.4f82cd73.svg');
+            background-size: 100% 100%;
+        }
+
+        .header__nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: 20%;
+            height: 100%;
+            margin: 0px;
+
+            .nav{
+                width: 100%;
+                .nav-ul{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    color: white;
+                    font-size: 20px;
+                    font-family: Arial, Helvetica, sans-serif;
+
+                    li{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+        .typeUl{
+            width: 15%;
+            height: 250px;
+            ul{
+                list-style: none;
+                color: white;
+                height: 200px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    cursor: pointer;
+                }
+            }
+        }
+        ul{
+            list-style: none;
+            color: white;
+            height: 200px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            li{
+                cursor: pointer;
+            }
+        }
+
+        .bird-info-div{
+            box-sizing: border-box;
+            padding: 1%;
+            width: 45%;
+            height: 42%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .bird-info-block{
+            background-color: rgb(102, 102, 102);
+            box-sizing: border-box;
+            padding: 1%;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .bird-top-side{
+                width: 100%;
+                height: 60%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .bird-pic{
+                    width: 40%;
+                    height: 100%;
+                    border-radius: 10px;
+                    margin: 0px;
+                    background-size: 100% 100%;
+                }
+
+                .player-block{
+                    margin: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    width: 55%;
+                    height: 100%;
+                }
+                hr{
+                    width: 100%;
+                }
+                .bird-name{
+                    width: 100%;
+                    height: 20%;
+                    font-size: 30px;
+                    font-family: 'Times New Roman', Times, serif;
+                    color: white;
+                }
+
+                .bird-name-translate{
+                    width: 100%;
+                    height: 20%;
+                    font-size: 30px;
+                    font-family: 'Times New Roman', Times, serif;
+                    color: white;
+                }
+
+                .bird-song{
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    .second-progress-and-time{
+                        width: 100%;
+                        height: 35%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        .second-time-progress{
+                            width: 80%;
+                            height: 20%;
+                            background-color: white;
+                        }
+                        .second-start-pause-btn{
+                            background-size: 100% 100%;
+                            background-image: url('svg/play.svg');
+                            width: 10%;
+                            height: 90%;
+                        }
+                }
+                .second-bottom-part-player{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    height: 50%;
+                    justify-content: space-between;
+
+                .second-volume{
+                    margin: 0;
+                    width: 50%;
+                    height: 60%;
+                    flex-direction: row;
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .second-volume-slide{
+                        width: 70%;
+                        height: 30%;
+                        background-color: white;
+                    }
+                    .second-mute-btn{
+                        background-size: 100% 100%;
+                        width:15%;
+                        height: 100%;
+                        background-image: url('svg/volume-mute.svg');
+                    }
+                }  
+                }
+                }
+            }
+            .bird-info{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                width: 100%;
+                height: 40%;
+                word-wrap: break-word;
+            }
+        } 
+        }
+
+    }
+    }
+}
